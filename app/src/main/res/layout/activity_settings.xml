@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_above="@+id/name"
+        android:layout_marginBottom="51dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone"
+        android:layout_marginBottom="23dp"
+        android:background="#00F8CDCD"
+        android:hint="Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/batch"
+        android:layout_marginBottom="27dp"
+        android:background="@null"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/batch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/department"
+        android:layout_marginBottom="26dp"
+        android:background="@null"
+        android:hint="Batch (i.e batch17/batch18...)"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirm"
+        android:layout_marginBottom="28dp"
+        android:background="@null"
+        android:hint="Department"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_button"
+        android:text="Confirm"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/custom_button"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>
